@@ -1,0 +1,32 @@
+.nosotros {
+  justify-content: center;
+  align-items: center;
+}
+.nosotros__div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.nosotros__articule {
+  width: 100%;
+  text-align: center;
+}
+.nosotros__p {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10px;
+  text-align: center;
+}
+.nosotros__img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+@media (max-width: 425px) {
+  .nosotros__img {
+    width: 300px;
+  }
+}

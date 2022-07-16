@@ -1,0 +1,67 @@
+.navbar {
+  width: 100%;
+  background-color: brown;
+  overflow: auto;
+  position: fixed;
+  margin-top: -6px;
+}
+.navbar__a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;	
+	font-size: 30px;
+  font-weight: bolder;
+}
+.navbar__a:hover {
+  background-color: black;
+  color: white;
+}
+.active {
+  background-color: white;
+  color: brown;
+}
+.navbar__icon {
+  width: 60px;
+  margin-left: 30px;
+}
+.navbar__icon_nav {
+  width: 60px;
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar__icon {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .navbar {
+    display: flex;
+    padding: 10px;
+  }
+  .navbar__a {
+    display: none;
+  }
+  .navbar__icon {
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  .navbar__icon_nav {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 280px;
+  }
+}
+@media (max-width: 375px) {
+  .navbar__icon_nav {
+    margin-left: 230px;
+  }
+}
+@media (max-width: 320px) {
+  .navbar__icon_nav {
+    margin-left: 180px;
+  }
+} 

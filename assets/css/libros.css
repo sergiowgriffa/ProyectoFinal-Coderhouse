@@ -1,0 +1,56 @@
+.libros {
+  justify-content: center;
+  align-items: center;
+}
+.libros__groups {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.libros__card {
+  width: 200px;
+  height: 285px;
+  border: 5px solid black;
+  border-radius: 8px;
+  margin: 10px;
+}
+.libro__img {
+  width: 200px;
+  height: 250px;
+}
+.libro__button {
+  background-color: black;
+  margin-top: -7px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.libro__button:hover {
+  background-color: brown;
+  color: white;
+  animation: ease-in-out;
+}
+.libro__a {
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+}
+@media (max-width: 320px) {
+  .libros__groups {
+    display: block;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .libros__groups {
+    display: block;
+    margin-left: 60px;
+  }
+}
+@media (max-width: 425px) {
+  .libros__groups {
+    display: block;
+    margin-left: 80px;
+  }
+}

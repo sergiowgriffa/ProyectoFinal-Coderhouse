@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+body {
+	background-color: white;
+	font-family: 'Poppins', sans-serif;
+}
+/* TITLES */
+.title {
+	text-align: center;
+	font-size: 40px;
+	text-decoration: underline brown;
+	margin-top: 5px;
+}
+.title span {
+	color: brown;
+}
+/* END TITLE */
+/* SECTION */
+section {
+	padding-top: 80px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+/* END SECTION */

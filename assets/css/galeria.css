@@ -1,0 +1,16 @@
+.galeria {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+}
+.galeria__groups {
+  grid-column: 1/5;
+  padding: 15px;
+}
+.galeria__libros {
+  width: 200px;
+  height: 250px;
+  border: 5px solid brown;
+  border-radius: 10px;
+  margin: 10px;
+}

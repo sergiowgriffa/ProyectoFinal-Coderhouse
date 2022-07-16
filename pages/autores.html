@@ -8,6 +8,8 @@
     <title>Libros Indispensables</title>
 		<!-- FAVICON -->
 		<link rel="shortcut icon" href="../assets/icon/libro.png" type="image/x-icon">
+		<!-- BOOTSTRAP -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		<!-- CSS STYLES -->
     <link rel="stylesheet" href="../assets/css/styles.css" />
 		<link rel="stylesheet" href="../assets/css/navbar.css">
@@ -21,38 +23,86 @@
   <body>
 		<!-- NAVBAR -->
 		<header>
-			<nav class="navbar">
-				<img class="navbar__icon" src="../assets/icon/libro.png">
-				<img class="navbar__icon_nav"src="../assets/icon/menu.png">
-				<a class="navbar__a" href="./contacto.html">Contacto</a>
-				<a class="navbar__a" href="./nosotros.html">Nosotros</a>
-				<a class="navbar__a" href="./libros.html">Libros</a>
-				<a class="navbar__a active" href="./autores.html">Autores</a>
-				<a class="navbar__a" href="../index.html">Inicio</a>
+			<nav class="navbar__me navbar">
+				<div class="container-fluid">
+					<span class="navbar__title navbar-brand">Libros Indispensables</span>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="./autores.html">Autores</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./libros.html">Libros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./nosotros.html">Nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 		<!-- END NAVBAR -->
 		<!-- SECTION -->
     <section>
 			<h1 class="title">Autores<span>.</span></h1>
-			<div class="autores">
-				<div class="autores__box">
-					<img class="autores__img" src="../assets/img/autores/1.jpg" />
-					<p class="autores__p">Julio Cortazar <br>  (1914-1984) <br> Paris (Francia) - Ciudad Autónoma de Buenos Aires (Argentina)</p>
+			<center>
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="../assets/img/autores/1.jpg" class="carousel__img d-block w-100">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Julio Cortazar </h5>
+								<p>(1914-1984) Paris (Francia) - Ciudad Autónoma de Buenos Aires (Argentina)</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="../assets/img/autores/2.jfif" class="carousel__img d-block w-100">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Jorge Francisco Isidoro Luis Borges</h5>
+								<p>(1899-1986) Ciudad Autónoma de Buenos Aires (Argentina) - Ginebra (Suiza)</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="../assets/img/autores/3.jfif" class="carousel__img d-block w-100">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Alejandra Pizarnik</h5>
+								<p>(1936-1972) Avellaneda (Argentina) - Ciudad Autónoma de Buenos Aires (Argentina)</p>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
-				<div class="autores__box">
-					<img class="autores__img" src="../assets/img/autores/2.jfif" />
-					<p class="autores__p">Jorge Francisco Isidoro Luis Borges <br> (1899-1986) <br> Ciudad Autónoma de Buenos Aires (Argentina) - Ginebra (Suiza)</p>
-				</div>
-				<div class="autores__box">
-					<img class="autores__img" src="../assets/img/autores/3.jfif" />
-					<p class="autores__p">Alejandra Pizarnik <br> (1936-1972) <br> Avellaneda (Argentina) - Ciudad Autónoma de Buenos Aires (Argentina)</p>
-				</div>
-			</div>
+			</center>
     </section>
 		<!-- END SECTION -->
+		<!-- FOOTER -->
     <footer class="footer">
       <p class="footer__p">&copy; Copyright | 2022 | Sergio Griffa</p>
     </footer>
+		<!-- END FOOTER -->
+		<!-- BOTSTRAP -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

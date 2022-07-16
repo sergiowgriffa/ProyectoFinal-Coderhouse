@@ -8,6 +8,8 @@
     <title>Libros Indispensables</title>
 		<!-- FAVICON -->
 		<link rel="shortcut icon" href="../assets/icon/libro.png" type="image/x-icon">
+		<!-- BOOTSTRAP -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		<!-- CSS STYLES -->
     <link rel="stylesheet" href="../assets/css/styles.css" />
 		<link rel="stylesheet" href="../assets/css/navbar.css">
@@ -21,14 +23,32 @@
   <body>
 		<!-- NAVBAR -->
 		<header>
-			<nav class="navbar">
-				<img class="navbar__icon" src="../assets/icon/libro.png">
-				<img class="navbar__icon_nav"src="../assets/icon/menu.png">
-				<a class="navbar__a" href="./contacto.html">Contacto</a>
-				<a class="navbar__a active" href="./nosotros.html">Nosotros</a>
-				<a class="navbar__a" href="./libros.html">Libros</a>
-				<a class="navbar__a" href="./autores.html">Autores</a>
-				<a class="navbar__a" href="../index.html">Inicio</a>
+			<nav class="navbar__me navbar">
+				<div class="container-fluid">
+					<span class="navbar__title navbar-brand">Libros Indispensables</span>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./autores.html">Autores</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./libros.html">Libros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="./nosotros.html">Nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 		<!-- END NAVBAR -->
@@ -40,13 +60,35 @@
 						Somos un grupo de lectores autodidactas. Con el objetivo de recuperar el
 						hábito de la lectura recurriendo, a los grandes autores de la
 						literatura.
+						La Biblioteca Nacional Mariano Moreno de la República Argentina, fundada
+						como Biblioteca Pública de Buenos Aires en el marco de la Revolución de
+						Mayo, atesora y resguarda, a través de las más modernas técnicas bibliotecológicas,
+						los materiales con los que se han forjado las distintas ideas y épocas del país,
+						que pone a disposición de la ciudadanía como una oportunidad para repensar los enigmas de nuestra cultura colectiva.
 					</p>
 				</article>
 				<img class="nosotros__img" src="../assets/img/img.png" alt="">
+				<article class="nosotros__articule">
+					<p class="nosotros__p">
+						Somos un grupo de lectores autodidactas. Con el objetivo de recuperar el
+						hábito de la lectura recurriendo, a los grandes autores de la
+						literatura.
+						La Biblioteca Nacional Mariano Moreno de la República Argentina, fundada
+						como Biblioteca Pública de Buenos Aires en el marco de la Revolución de
+						Mayo, atesora y resguarda, a través de las más modernas técnicas bibliotecológicas,
+						los materiales con los que se han forjado las distintas ideas y épocas del país,
+						que pone a disposición de la ciudadanía como una oportunidad para repensar los enigmas de nuestra cultura colectiva.
+					</p>
+				</article>
+				<img class="nosotros__img" src="../assets/img/img_.png" alt="">
 			</div>
 		</section>
+		<!-- FOOTER -->
     <footer class="footer">
       <p class="footer__p">&copy; Copyright | 2022 | Sergio Griffa</p>
     </footer>
+		<!-- END FOOTER -->
+		<!-- BOTSTRAP -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -55,26 +55,26 @@
 		<section>
 			<h1 class="title">Contacto<span>.</span></h1>
 			<article>
-				<form class="form">
+				<form class="form" id="form">
 					<div class="form__div">
 						<label class="form__label">
 							<p class="form__p">Nombre</p>
-							<input class="form__input" type="text" placeholder="Nombre" />
+							<input class="form__input" type="text" name="user_name" placeholder="Nombre" />
 						</label>
 						<label class="form__label">
 							<p class="form__p">Apellido</p>
-							<input class="form__input" type="text" placeholder="Apellido" />
+							<input class="form__input" type="text" name="user_lastname" placeholder="Apellido" />
 						</label>
 						<label class="form__label">
 							<p class="form__p">Email</p>
-							<input class="form__input" type="email" placeholder="Email" />
+							<input class="form__input" type="email" name="email" id="email" placeholder="Email" />
 						</label>
 					</div>
 					<div class="form__div_2">
 						<label class="form__p"> Dejanos tu opinión o mensaje que nos quieras comunicar.</label> <br />
-						<textarea class="form__textarea" name="Opinión" id="" cols="40" rows="10"></textarea>
+						<textarea class="form__textarea" name="message" id="message" id="" cols="40" rows="10"></textarea>
 					</div>
-					<button type="submit" class="form__button">ENVIAR</button>
+					<button type="submit" id="button" value="Enviar Email" class="form__button">ENVIAR</button>
 				</form>
 			</article>
 		</section>
@@ -85,5 +85,12 @@
 		<!-- END FOOTER -->
 		<!-- BOTSTRAP -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+		<!-- EMAIL.JS -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+			emailjs.init('xEycQ0C1n195XD7YA')
+		</script>
+		<script src="../assets/js/email.js"></script>
+		<!-- END EMAIL.JS -->
+	</body>
 </html>

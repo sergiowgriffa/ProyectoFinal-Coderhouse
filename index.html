@@ -19,8 +19,32 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-  </head>
+		<!-- SWEET ALERT -->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!-- AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	</head>
   <body>
+		<!-- SWAL ALERT & AOS-->
+		<script>
+		swal({
+			title: "Bienvenido a Libros Indispensables",
+			text: "Ingresa tu nombre",
+			content: "input",
+			icon: "info", 
+			dangerMode: true,
+		})
+		.then((value) => {
+			swal({
+				icon: "success",
+				text: `Bienvenido ${value}`,
+				dangerMode: true,
+			});
+		});
+		AOS.init();
+		</script>
+		<!-- END SWAL ALERT-->
 		<!-- NAVBAR -->
 		<header>
 			<nav class="navbar">
@@ -56,17 +80,22 @@
 		<section>
 			<h1 class="title">Inicio<span>.</span></h1>
 			<article>
-				<p>Biblioteca con más de 5000 libros en sus versiones online y audiolibros.</p>
+				<p>Biblioteca con más de 5000 libros en sus versiones online y audiolibros. <br>
+					Ya no tienes que buscar páginas pirata para conseguir el libro que buscas sin pagar. <br>
+					Puedes consultar la mejor biblioteca online con libros gratuitos en 
+					los que encontrar miles de títulos para consultar o descargar. <br>
+					Al final te daremos algunas recomendaciones de libros que están triunfando este año.
+				</p>
 			</article>
 			<!-- GALERIA -->
 			<h2 class="title">Galeria de Libros<span>.</span></h2>
 			<div class="galeria">
-					<img class="galeria__libros" src="./assets/img/libros/1.jpg" alt="">
-					<img class="galeria__libros" src="./assets/img/libros/2.jpg" alt="">
-					<img class="galeria__libros" src="./assets/img/libros/3.jfif" alt="">
-					<img class="galeria__libros" src="./assets/img/libros/4.jfif" alt="">
-					<img class="galeria__libros" src="./assets/img/libros/5.jfif" alt="">
-					<img class="galeria__libros" src="./assets/img/libros/6.jfif" alt="">
+					<img class="galeria__libros" src="./assets/img/libros/1.jpg" data-aos="fade-right">
+					<img class="galeria__libros" src="./assets/img/libros/2.jpg" data-aos="fade-center">
+					<img class="galeria__libros" src="./assets/img/libros/3.jfif"data-aos="fade-left">
+					<img class="galeria__libros" src="./assets/img/libros/4.jfif"data-aos="fade-right">
+					<img class="galeria__libros" src="./assets/img/libros/5.jfif"data-aos="fade-center">
+					<img class="galeria__libros" src="./assets/img/libros/6.jfif"data-aos="fade-left">
 			</div>
 			<!-- END GALERIA -->
 		</section>
@@ -78,5 +107,5 @@
 		<!-- END FOOTER -->
 		<!-- BOTSTRAP -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+	</body>
 </html>

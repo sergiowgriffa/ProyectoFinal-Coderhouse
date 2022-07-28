@@ -1,25 +1,91 @@
-body {
-	background-color: white;
-	font-family: 'Poppins', sans-serif;
-	overflow-x: hidden;
+.navbar {
+  z-index: 99;
+  background-color: brown;
+  position: fixed;
+  width: 100%;
 }
+
+.navbar-brand {
+  color: white;
+  font-weight: bolder;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.nav-item {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  background-color: white;
+  border-radius: 5px;
+  color: brown;
+  animation: ease-in-out;
+}
+
+.active {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 5px;
+  color: brown;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.footer {
+  text-align: center;
+  background-color: brown;
+  padding: 20px;
+  color: white;
+}
+
+.footer__p {
+  color: white;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
 /* TITLES */
 .title {
-	text-align: center;
-	font-size: 40px;
-	font-weight: bolder;
-	text-decoration: underline brown;
-	margin-top: 5px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: underline brown;
+  margin-top: 5px;
 }
+
 .title span {
-	color: brown;
+  color: brown;
 }
+
 /* END TITLE */
 /* SECTION */
 section {
-	padding-top: 80px;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
+  padding-top: 80px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
+
 /* END SECTION */
+
+/*# sourceMappingURL=styles_2.css.map */

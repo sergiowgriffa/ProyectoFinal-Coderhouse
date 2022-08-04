@@ -1,0 +1,10 @@
+$map_titulo: (
+  tamañoFuente1: 50px,
+  tamañoFuente2: 30px
+);
+
+@each $name, $value in $map_titulo {
+  .title-#{$name} {
+    font-size: $value;
+  }
+}

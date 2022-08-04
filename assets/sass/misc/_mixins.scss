@@ -1,0 +1,10 @@
+@mixin carousel_mixin ($index, $marginTop, $marginBottom) {
+  z-index: $index;
+  margin-top: $marginTop;
+  margin-bottom: $marginBottom;
+}
+
+@mixin carousel_img_mixin ($fit, $height) {
+  object-fit: $fit;
+  height: $height;
+}

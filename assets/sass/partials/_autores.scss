@@ -1,0 +1,16 @@
+@import './../misc/mixins';
+
+.carousel {
+  @include carousel_mixin (1, 20px, 50px);
+}
+
+.carousel__img  {
+  @include carousel_img_mixin (cover, 800px);
+}
+
+@media (max-width: 480px) {
+  .carousel__img  {
+    object-fit: cover;
+    height: 400px;
+  }
+}

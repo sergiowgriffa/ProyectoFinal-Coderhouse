@@ -1,4 +1,8 @@
-@import 'navbar';
-@import 'footer';
-@import 'home';
-@import 'base/variables';
+@import './partials/navbar';
+@import './partials/footer';
+@import './partials/home';
+@import './partials/autores';
+@import './partials/contacto';
+@import './misc/variables';
+@import './misc/mixins';
+@import './misc/maps';

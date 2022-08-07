@@ -1,6 +1,6 @@
 $map_titulo: (
-  tamañoFuente1: 50px,
-  tamañoFuente2: 30px
+  tamanoFuente1: 50px,
+  tamanoFuente2: 30px
 );
 
 @each $name, $value in $map_titulo {

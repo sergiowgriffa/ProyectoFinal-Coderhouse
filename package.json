@@ -1,11 +1,17 @@
 {
-  "name": "proyectofinal-coderhouse-main",
+  "name": "proyecto-libreria-digital-coderhouse",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este es un proyecto orientado a una biblioteca virtual como proyecto final de coderhouse",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch assets/sass/styles.scss assets/css/styles.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
 }

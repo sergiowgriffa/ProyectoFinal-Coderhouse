@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .navbar {
   z-index: 99;
   background-color: brown;
@@ -90,7 +89,6 @@ section {
 .carousel {
   z-index: 1;
   margin-top: 20px;
-  margin-bottom: 50px;
 }
 
 .carousel__img {
@@ -101,7 +99,21 @@ section {
 @media (max-width: 480px) {
   .carousel__img {
     object-fit: cover;
-    height: 400px;
+    height: 600px;
+  }
+}
+.parrafo {
+  font-size: 35px;
+}
+
+@media (max-width: 767px) {
+  .parrafo {
+    font-size: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .parrafo {
+    font-size: 15px;
   }
 }
 .form {
@@ -196,12 +208,93 @@ section {
   .form__textarea {
     width: 280px;
   }
+  .logoImg {
+    width: 75%;
+  }
 }
-.title-tamañoFuente1 {
+.logoImg {
+  margin-bottom: 2rem;
+}
+
+.galeria {
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin: 30px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.galeria__libros {
+  width: 300px;
+  height: 350px;
+  border: 5px solid brown;
+  border-radius: 10px;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.galeria__libros:hover {
+  transform: translate(10px, 10px);
+  animation: ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .galeria {
+    grid-template-columns: 350px 350px;
+  }
+}
+@media (max-width: 700px) {
+  .galeria {
+    grid-template-columns: 350px;
+  }
+}
+.nosotros {
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros__div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nosotros__articule {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nosotros__p {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.nosotros__img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .nosotros__img {
+    width: 300px;
+  }
+}
+.title-tamanoFuente1 {
   font-size: 50px;
 }
 
-.title-tamañoFuente2 {
+.title-tamanoFuente2 {
   font-size: 30px;
 }
 

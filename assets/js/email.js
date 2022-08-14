@@ -8,7 +8,8 @@ document.getElementById('form')
     emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Enviar Email';
-      alert('Sent!');
+      alert('Enviado!');
+      window.location.reload();
     }, (err) => {
       btn.value = 'Enviar Email';
       alert(JSON.stringify(err));
